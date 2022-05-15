@@ -1,0 +1,50 @@
+header {
+  width: 100%;
+}
+header h1 {
+  width: 500px;
+  text-transform: uppercase;
+  margin-left: 35%;
+  color: black;
+}
+section {
+  position: relative;
+}
+.car_1 {
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  margin-top: 10%;
+  left: 30%;
+  animation-name: moveleft;
+  animation-duration: 3s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+.car_2 {
+  position: absolute;
+  width: 250px;
+  height: 150px;
+  margin-top: 10%;
+  right: 31%;
+  animation-name: moveright;
+  animation-duration: 3s;
+  animation-delay: 0.2s;
+  animation-iteration-count: infinite;
+}
+@keyframes moveleft {
+  from {
+    left: 30%;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes moveright {
+  from {
+    right: 30%;
+  }
+  to {
+    right: 0;
+  }
+}
